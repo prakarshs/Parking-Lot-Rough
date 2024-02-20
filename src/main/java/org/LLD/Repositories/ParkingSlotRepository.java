@@ -1,25 +1,19 @@
 package org.LLD.Repositories;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.LLD.Constants.Enums.VehicleType;
-import org.LLD.Entities.ParkingLots;
+
+import org.LLD.Entities.ParkingSlots;
 
 import java.util.HashMap;
 import java.util.Map;
 @Data
-
+@AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class ParkingSlotRepository {
-    private Map<VehicleType,Map<String,ParkingLots> > parkingLotsMap = new HashMap<>();
+    private Map<String, ParkingSlots> parkingSlotsMap = new HashMap<>();
 
-    ParkingSlotRepository(Map<VehicleType,Map<String,ParkingLots> > parkingLotsMap) {
-        for (VehicleType vehicleType : VehicleType.values()) {
-            parkingLotsMap.put(vehicleType, new HashMap<>());
-        }
-        this.parkingLotsMap=parkingLotsMap;
-    }
+
 }

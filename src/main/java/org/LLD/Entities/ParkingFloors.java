@@ -14,5 +14,5 @@ import java.util.Map;
 @Builder
 public class ParkingFloors {
     private Integer parkingFloorId;
-    private Map<VehicleType, Map<String,ParkingSlots>> parkingSlots;
+    private Map<String,ParkingSlots> parkingSlots;
 }
