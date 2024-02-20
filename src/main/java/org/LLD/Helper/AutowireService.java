@@ -7,13 +7,14 @@ import org.LLD.Services.Display.DisplayService;
 import org.LLD.Services.Display.DisplayServiceIMPL;
 import org.LLD.Services.Find.FindingService;
 import org.LLD.Services.Find.FindingServiceIMPL;
-import org.LLD.Services.Parking.ParkingService;
-import org.LLD.Services.Parking.ParkingServiceIMPL;
+import org.LLD.Services.Ticket.TicketService;
+import org.LLD.Services.Ticket.TicketServiceIMPL;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class AutowireService {
     DisplayService displayService = new DisplayServiceIMPL();
-    ParkingService parkingService = new ParkingServiceIMPL();
     FindingService findingService = new FindingServiceIMPL();
+    TicketService ticketService = new TicketServiceIMPL();
 }
