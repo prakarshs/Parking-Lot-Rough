@@ -5,6 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.LLD.Services.Display.DisplayService;
 import org.LLD.Services.Display.DisplayServiceIMPL;
+import org.LLD.Services.Find.FindingService;
+import org.LLD.Services.Find.FindingServiceIMPL;
 import org.LLD.Services.Parking.ParkingService;
 import org.LLD.Services.Parking.ParkingServiceIMPL;
 @Data
@@ -13,4 +15,5 @@ import org.LLD.Services.Parking.ParkingServiceIMPL;
 public class AutowireService {
     DisplayService displayService = new DisplayServiceIMPL();
     ParkingService parkingService = new ParkingServiceIMPL();
+    FindingService findingService = new FindingServiceIMPL();
 }

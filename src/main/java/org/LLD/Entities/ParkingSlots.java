@@ -12,7 +12,7 @@ import org.LLD.Constants.Enums.VehicleType;
 @NoArgsConstructor
 @Builder
 public class ParkingSlots {
-    private String parkingSlotId;
+    private Integer parkingSlotId;
     private VehicleType slotType;
     private SlotState slotState;
 }
